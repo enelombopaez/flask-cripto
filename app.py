@@ -12,7 +12,7 @@ def home():
     return "Hello, Flask!"
 '''
 
-apikey = secrets.get('SECRET_KEY')
+apikey = secrets.get('API_KEY')
 
 headers = {
     'X-CoinAPI-Key': apikey
