@@ -1,18 +1,17 @@
-from secretdata import secrets
+from secretsdata import securedata
 
 import requests 
 
 
-'''
 from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return "Hello, Flask!"
-'''
 
-apikey = secrets.get('API_KEY')
+
+apikey = securedata.get('API_KEY')
 
 headers = {
     'X-CoinAPI-Key': apikey
